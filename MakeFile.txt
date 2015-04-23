@@ -1,0 +1,10 @@
+all : Assembler.c Assembler_Functions.c
+		gcc -o main Assembler.c Assembler_Functions.c -I .
+		
+run:
+		./main
+		
+clean:
+	rm -f main
+	rm -f t
+	
